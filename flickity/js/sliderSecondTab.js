@@ -1,8 +1,17 @@
-var flkty = new Flickity( '#ideaCarousel', {
-    contain: true,
-    pageDots: false,
-    setGallerySize: false,
-    wrapAround: true,
-    freeScroll: true,
-    // autoPlay: 1600
+let flktySecond = new Flickity(".Slider", {
+  setGallerySize: false,
+  pageDots: false,
+  initialIndex: 1 
 });
+
+
+const transformer = new FlickityTransformer(flktySecond, [
+  {
+    name: "scale",
+    stops: [
+      [-300, 0.5],
+      [0, 1.2],
+      [300, 0.5]
+    ]
+  }
+]);
