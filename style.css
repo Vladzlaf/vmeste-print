@@ -953,4 +953,7 @@ div[class^="cat"] > input:checked + .tab-calc::before {
     .tabs-page-first-container {
         display: none;
     }
+    .header-top-text-mobile {
+        padding-left: 10px;
+    }
 }
