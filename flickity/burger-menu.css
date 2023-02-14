@@ -250,7 +250,7 @@ button:hover {
       right: 0;
       top: -100%;
       flex-direction: column;
-      width: 45vw;
+      width: 280px;
       height: fit-content   
     }
     .navbar-mobile-info .header-mobile-info li:first-child {
