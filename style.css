@@ -54,6 +54,16 @@ h3 {
     color: #000000;
 }
 
+header {
+    transition: 0.4s ease all;
+
+}
+
+.navbar-mobile-info {
+    transition: 0.4s ease all;
+
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -75,10 +85,44 @@ body {
     border-bottom: 1px solid rgba(188, 180, 165, 1)
 }
 
+.header-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 995px) {
+    .header-mobile {
+        position: fixed;
+        z-index: 2;
+        background-color: #FFFFFF;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 16.36%;
+        border-bottom: 1px solid rgba(188, 180, 165, 1)
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .breadcrumb-container {
+        padding-top: 70px;
+    }
+}
+
+
+
 .header-top-location{
     display: flex;
     align-items: center;
 
+}
+
+@media screen and (max-width: 995px) {
+    .header-top-location{
+        display: none;
+    } 
 }
 
 .header-top-tel{
@@ -88,10 +132,22 @@ body {
 
 }
 
+@media screen and (max-width: 995px) {
+    .header-top-tel{
+        display: none;
+    } 
+}
+
 .header-top-mail{
     display: flex;
     align-items: center;
 
+}
+
+@media screen and (max-width: 995px) {
+    .header-top-mail{
+        display: none;
+    } 
 }
 
 .header-top-text-link:not(:first-child){
@@ -102,6 +158,8 @@ body {
     color: #000000;
     padding-top: 6px;
 }
+
+
 
 .header-top-button {
     width: 186px;
@@ -116,6 +174,13 @@ body {
     text-transform: uppercase;
 
 }
+
+@media screen and (max-width: 995px) {
+    .header-top-button{
+        display: none;
+    } 
+}
+
 
 .header-top-text-link {
     
@@ -168,10 +233,32 @@ body {
 
 }
 
+@media screen and (max-width: 995px) {
+    .header-top{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 995px) {
+    .header-bottom{
+        display: none;
+    } 
+}
+
 .header-bottom-logo{
     display: flex;
     align-items: center;
 }
+
+.header-bottom-logo-part2 {
+    margin-bottom: 3px;
+}
+@media screen and (max-width: 995px) {
+    .header-bottom-logo{
+        padding-left: 30px;
+    }
+}
+
 
 .header-bottom-logo-part1 {
     background-image: url(./assets/svg/vector.svg);
@@ -230,9 +317,6 @@ body {
     
 }
 
-.breadcrumb-container {
-    padding: 0 16.36%;
-}
 
 
 .breadcrumb {
@@ -283,6 +367,7 @@ a {
 
 .carousel {
     margin-bottom: 40px;
+    height: 100%;
 }
   
 .carousel-cell {
@@ -507,7 +592,6 @@ img {
 @media screen and (max-width: 990px) {
     .row-container {
         display: flex;
-        flex-direction: column;
     }
 }
 
@@ -522,6 +606,40 @@ img {
     .col-container:not(:last-child) {
         border-right: none ;
     }
+}
+
+@media screen and (max-width: 990px) {
+    .name-container {
+        width: 426px;
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .descr-container {
+        width: 372px;
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .price-container {
+        width: 251px;
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .amount-container {
+        width: 251px;
+        flex: none;
+    }
+}
+
+
+.row-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll
 }
 
 .price-name-conent {
@@ -686,5 +804,153 @@ form {
         padding-right: 20px;
         padding-bottom: 25px;
 
+    }
+}
+
+ .wrap {
+	 display: block;
+	 max-width: 1024px;
+	 /* margin: 0 auto 2em; */
+	 /* padding: 0 1em; */
+	 width: 100%;
+}
+
+ .question-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	 font-size: 1rem;
+	 margin-bottom: 1em;
+	 /* padding: 1em; */
+	 position: relative;
+	 vertical-align: top;
+	 width: 100%;
+}
+
+
+ div[class^="cat"] {
+	 /* width: fit-content; */
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     padding-bottom: 30px;
+}
+ div[class^="cat"] > label {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+    color: #1FC977;
+    background: #FFFFFF;
+    border: 1px solid #1FC977;
+    border-radius: 50px;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 13px;
+	transition: all 0.55s;
+}
+
+div[class^="cat"] > input:checked + label {
+    color: #FFFFFF;
+    background:  #1FC977;
+    margin-bottom: 70px;
+
+}
+
+div[class^="cat"] > input:checked + .tab-type::before {
+    content: url(./assets/svg/button-type-active.svg) ;
+    padding-right: 12px;
+   
+}
+
+div[class^="cat"] > input:checked + .tab-price::before {
+    content: url(./assets/svg/button-pice-active.svg) ;
+    padding-right: 12px;
+}
+
+div[class^="cat"] > input:checked + .tab-calc::before {
+        content: url(./assets/svg/button-calc-active.svg) ;
+        padding-right: 12px;
+}
+
+
+ div[class^="cat"] > input {
+	 position: absolute;
+	 z-index: -999;
+     display: none;
+}
+
+ div[class^="cat"] .question-wrap {
+	 height: 100%;
+	 max-height: 0;
+	 opacity: 0;
+	 overflow: hidden;
+	 transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+	 width: 100%;
+}
+ div[class^="cat"] > input:checked ~ .question-wrap {
+	 max-height: fit-content;
+	 opacity: 1;
+	 transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+}
+ .question-wrap .question {
+	 margin: 1em 0;
+}
+ .question-wrap label {
+	 cursor: pointer;
+	 display: block;
+	 margin-bottom: 0.5em;
+}
+
+ .question-wrap input {
+	 position: absolute;
+	 z-index: -999;
+	 top: -10000px;
+}
+ .question-wrap input:not(:checked) ~ p {
+	 height: 100%;
+	 max-height: 0;
+	 opacity: 0;
+	 overflow: hidden;
+	 transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+ .question-wrap input:checked ~ p {
+	 max-height: 500px;
+	 opacity: 1;
+	 transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+}
+ input:focus {
+	 border: 3px solid red;
+	 outline: 3px solid red;
+	 background: red;
+}
+
+.cat-1 {
+    width:100%;
+}
+ 
+.cat-2 {
+    width: 97%;
+}
+
+.cat-3 {
+    width: 100%;
+}
+ 
+.tabs-page-first-container-mobail {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .tabs-page-first-container-mobail {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tabs-page-first-container {
+        display: none;
     }
 }
