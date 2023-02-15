@@ -860,7 +860,7 @@ div[class^="cat"] > label {
 }
 
 .tab-calc {
-    border: 1px solid #1FC977;
+    border-bottom: 1px solid #1FC977!important;
 }
 
 
