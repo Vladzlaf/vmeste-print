@@ -859,6 +859,8 @@ div[class^="cat"] > label {
     border-bottom: none;
 }
 
+
+
 .tab-calc {
     border-bottom: 1px solid #1FC977!important;
 }
@@ -966,6 +968,11 @@ div[class^="cat"] > input:checked + .tab-calc::before {
     .tabs-page-first-container {
         display: none;
     }
+
+    .tabs-page-second-container {
+        display: none;
+    }
+
     .header-top-text-mobile {
         padding-left: 10px;
     }
@@ -1197,17 +1204,192 @@ div[class^="cat"] > input:checked + .tab-calc::before {
 
     .footer-top-mail {
         justify-content: center;
+        flex-direction: column;
     }
 
     .footer-top-tel {
         justify-content: center;
+        flex-direction: column;
     }
 
     .footer-top-location {
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .header-top-text-container {
+        margin-top: 20px;
     }
 
 }
 
+ /* -------------------------------------------------------------------Tabs second page mobile----------------------------------------------------------------- */
+ .wrap-second {
+    display: block;
+    max-width: 1024px;
+    /* margin: 0 auto 2em; */
+    /* padding: 0 1em; */
+    width: 100%;
+}
+
+.question-section-second {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    /* padding: 1em; */
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+}
 
 
+div[class^="catsecond"] {
+    /* width: fit-content; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div[class^="catsecond"] > label {
+   display: flex;
+   align-items: center;
+   width: 95vw;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 13px;
+   color: #1FC977;
+   background: #FFFFFF;
+   border: 1px solid #1FC977;
+   padding: 12px 15px;
+   text-transform: uppercase;
+   font-weight: 700;
+   line-height: 13px;
+   transition: all 0.55s;
+}
+
+div[class^="catsecond"] > label {
+   border-bottom: none;
+}
+
+
+
+.tab-calc {
+   border-bottom: 1px solid #1FC977!important;
+}
+
+
+
+div[class^="catsecond"] > input:checked + label {
+   color: #FFFFFF;
+   background:  #1FC977;
+   margin-bottom: 70px;
+
+}
+
+div[class^="catsecond"] > input:checked + .tab-type::before {
+   content: url(./assets/svg/button-type-active.svg) ;
+   padding-right: 12px;
+  
+}
+
+div[class^="catsecond"] > input:checked + .tab-price::before {
+   content: url(./assets/svg/button-pice-active.svg) ;
+   padding-right: 12px;
+}
+
+div[class^="catsecond"] > input:checked + .tab-calc::before {
+       content: url(./assets/svg/button-calc-active.svg) ;
+       padding-right: 12px;
+}
+
+
+div[class^="catsecond"] > input {
+    position: absolute;
+    z-index: -999;
+    display: none;
+}
+
+div[class^="catsecond"] .question-wrap-second {
+    height: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100%;
+}
+div[class^="catsecond"] > input:checked ~ .question-wrap-second {
+    max-height: fit-content;
+    opacity: 1;
+    transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.question-wrap-second .question {
+    margin: 1em 0;
+}
+.question-wrap-second label {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.question-wrap-second input {
+    position: absolute;
+    z-index: -999;
+    top: -10000px;
+}
+.question-wrap-second input:not(:checked) ~ p {
+    height: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.question-wrap-second input:checked ~ p {
+    max-height: 500px;
+    opacity: 1;
+    transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+}
+input:focus {
+    border: 3px solid red;
+    outline: 3px solid red;
+    background: red;
+}
+
+.cat-1 {
+   width:100%;
+}
+
+.cat-2 {
+   width: 97%;
+}
+
+.cat-3 {
+   width: 100%;
+}
+
+.tabs-page-second-container-mobail {
+   display: none;
+}
+
+@media screen and (max-width: 900px) {
+   .tabs-page-second-container-mobail {
+       display: block;
+       margin-top: 70px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .tabs-page-secod-container {
+       display: none;
+   }
+
+   .tabs-page-second-container {
+       display: none;
+   }
+   
+   .header-top-text-mobile {
+       padding-left: 10px;
+   }
+}
+
+ /* -------------------------------------------------------------------Tabs second page mobile end----------------------------------------------------------------- */
