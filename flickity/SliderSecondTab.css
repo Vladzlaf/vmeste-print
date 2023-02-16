@@ -34,7 +34,7 @@
   }
 }
 
-.idea-card.is-selected img:hover {
+.idea-card.is-selected img {
   transform: scale(2.2);
   filter: grayscale(0) blur(0);
 }
