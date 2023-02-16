@@ -25,8 +25,8 @@ navbar.querySelector(".toggle-info").addEventListener("click", burgerMenuInfo)
 
 // navbar.querySelector(".toggle").addEventListener("click", () => {
 //   if (menuOpen === true) {
-//       navbar.classList.add("collapsed2");
-//       navbarInfo.classList.remove("collapsed-info2");
+//       navbar.classList.toggle("collapsed2");
+//       navbarInfo.classList.toggle("collapsed-info2");
 //   }
 // }) 
 // header.querySelector(".overlay").addEventListener("click", burgerMenu)

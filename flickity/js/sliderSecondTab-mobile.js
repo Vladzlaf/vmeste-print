@@ -1,10 +1,9 @@
-var flkty5 = new Flickity( '#ideaCarousel', {
+var flkty6 = new Flickity( '#ideaCarouselMobile', {
   contain: true,
   pageDots: false,
   setGallerySize: false,
   wrapAround: true,
-  prevNextButtons: false,
-  fullscreen: true,
+  
   // freeScroll: false,
   // autoPlay: 1600
 });

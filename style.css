@@ -374,6 +374,10 @@ a {
     height: 100%;
 }
   
+.carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+  
 .carousel-cell {
     width: 100%;
     height: auto;
@@ -790,6 +794,7 @@ form {
 
 .tabs-page-second-container {
     padding-top: 70px;
+    border-bottom: 1px solid rgba(188, 180, 165, 1);
 }
 
 .page-second-tab:not(:last-child) {
@@ -1402,8 +1407,12 @@ input:focus {
     justify-content: space-between;
     padding: 70px 0;
 
+
+}
+
+.example-container-border:not(:last-child) {
+
     border-bottom: 1px solid #BCB4A5;
-    border-top: 1px solid #BCB4A5;
 
 }
 
@@ -1495,6 +1504,9 @@ input:focus {
     color: #000000;
 }
 
+.example-padding {
+    padding-top: 70px;
+}
 
 @media screen and (max-width: 995px) {
     .example-cards-page {
@@ -1565,8 +1577,6 @@ input:focus {
     justify-content: space-between;
     padding: 70px 0;
 
-    border-bottom: 1px solid #BCB4A5;
-    border-top: 1px solid #BCB4A5;
 
 }
 
@@ -1714,3 +1724,19 @@ input:focus {
     }
 }
  /* ----------------------------------------------------------------------Card activity page end------------------------------------------------------------------- */
+
+ .hide-tab {
+    display: none!important;
+ }
+
+ .border-bottom-tab {
+    border-bottom: 1px solid #1FC977!important; 
+ }
+
+.rights {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 15px 0;
+    color: #000000;
+}

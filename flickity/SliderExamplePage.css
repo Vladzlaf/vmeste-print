@@ -1,23 +1,25 @@
 
-.brands-wrap {
+.example-wrap {
     padding: 25px 25px 0 25px;
-    
+    width: 100%;
     margin: 0 auto;
   }
   
 @media (max-width: 848px) {
-  .brands-wrap {
+  .example-wrap {
     padding: 25px 0 0 0;
+
   }
 }
 
-  .brand-carousel{
+  .example-carousel{
     background: transparent;
     height: 330px;
   }
   
-  .product-card {
+  .example-product {
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 0 15px;
     text-align: center;
@@ -25,8 +27,8 @@
   }
 
   @media (min-width: 990px) {
-    .product-card {
-      width: 25%;
+    .example-product {
+      width: 20%;
     }
   }
   
@@ -34,7 +36,7 @@
     transform: scale(1);
     filter: grayscale(0) blur(0);
   } */
-  .product-card img {
+  .example-product img {
     transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     /* easeInOutBack */
     display: inline-block;
@@ -72,3 +74,24 @@
   .flickity-prev-next-button:hover {
     background: transparent;
   } 
+
+.example-slider-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.example-slider-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
+
+.example-paddinh-top {
+  padding-top: 0;
+}

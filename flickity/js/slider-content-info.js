@@ -1,6 +1,7 @@
-var flkty = new Flickity( '.carousel-main', {
+var flkty1 = new Flickity( '.carousel-main', {
     sync:".carousel-nav",
-    prevNextButtons:false
+    prevNextButtons:false,
+    fullscreen: true
 });
 
 var flkty2 = new Flickity( '.carousel-nav', {
@@ -9,5 +10,6 @@ var flkty2 = new Flickity( '.carousel-nav', {
     pageDots: false
   });
 
-
+  flkty1.resize()
+  flkty2.resize()
 

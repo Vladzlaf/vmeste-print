@@ -1,26 +1,58 @@
 
-.idea-wrap {
+.idea-wrap-mobile {
   padding: 25px 25px 0 25px;
   
   margin: 0 auto;
 }
 
 @media (max-width: 848px) {
-.idea-wrap {
+.idea-wrap-mobile {
   padding: 25px 0 0 0;
 }
 }
 
-.idea-carousel.is-fullscreen .idea-card {
-  height: 100%;
-}
-
-.idea-carousel{
+.idea-carousel-mobile{
   background: transparent;
   height: 900px;
 }
 
-.idea-card {
+@media (max-width: 848px) {
+  .idea-carousel-mobile{
+    height: 750px;
+  }
+}
+
+@media (max-width: 570px) {
+  .idea-carousel-mobile{
+    height: 600px;
+  }
+}
+
+@media (max-width: 520px) {
+  .idea-carousel-mobile{
+    height: 530px;
+  }
+}
+
+@media (max-width: 450px) {
+  .idea-carousel-mobile{
+    height: 470px;
+  }
+}
+
+@media (max-width: 400px) {
+  .idea-carousel-mobile{
+    height: 430px;
+  }
+}
+
+@media (max-width: 350px) {
+  .idea-carousel-mobile{
+    height: 390px;
+  }
+}
+
+.idea-card-mobile {
   max-width: 100%;
   height: auto;
   padding: 0 15px;
@@ -29,16 +61,16 @@
 }
 
 @media (min-width: 990px) {
-  .idea-card {
+  .idea-card-mobile {
     width: 60%;
   }
 }
 
-.idea-card.is-selected img:hover {
+.idea-card-mobile.is-selected img {
   transform: scale(2.2);
   filter: grayscale(0) blur(0);
 }
-.idea-card img {
+.idea-card-mobile img {
   transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   /* easeInOutBack */
   display: inline-block;
@@ -48,7 +80,6 @@
   height: auto;
   padding-bottom: 14px;
 }
-
 
 
 
@@ -78,12 +109,12 @@
   background: transparent;
 } 
 
-.flickity-slider {
+.flickity-slider-mobile {
   display: flex;
   align-items: center;
 }
 
-.slider-idea-title {
+.slider-idea-title-mobile {
   font-weight: 700;
   font-size: 28px;
   line-height: 27px;

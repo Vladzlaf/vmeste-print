@@ -28,8 +28,8 @@ navbar.querySelector(".toggle").addEventListener("click", burgerMenu)
 
 // navbar.querySelector(".toggle-info").addEventListener("click", () => {
     
-//         navbarInfo.classList.add("collapsed-info2");
-//         navbar.classList.remove("collapsed2");
+//         navbarInfo.classList.toggle("collapsed-info2");
+//         navbar.classList.toggle("collapsed2");
     
 // }) 
 
