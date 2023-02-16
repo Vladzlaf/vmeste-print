@@ -1393,3 +1393,324 @@ input:focus {
 }
 
  /* -------------------------------------------------------------------Tabs second page mobile end----------------------------------------------------------------- */
+ /* ----------------------------------------------------------------------Card example page------------------------------------------------------------------------ */
+
+
+.example-cards-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+
+    border-bottom: 1px solid #BCB4A5;
+    border-top: 1px solid #BCB4A5;
+
+}
+
+.example-card-img {
+    position: relative;
+    left: 95px;
+    bottom: 40px;
+}
+
+.example-card-img2 {
+    position: relative;
+    left: 231px;
+    bottom: 81px;
+}
+
+.example-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 334px;
+    height: 162px;
+}
+
+.example-text-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 27px;
+    margin-bottom: 22px;
+}
+
+.example-text-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+
+.example-card-container {
+    width: 426px;
+    height: 395.48px;
+}
+
+.example-card-container:not(:last-child) {
+    margin-right: 40px;
+}
+
+.example-card-btn {
+    position: relative;
+    bottom: 30px;
+    width: 216px;
+    height: 57px;    
+    background-color: #60BF91;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.example-card-btn2 {
+    position: relative;
+    bottom: 93px;    
+    width: 216px;
+    height: 57px;    
+    background-color: #60BF91;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.example-card-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;    
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.example-card-subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 31px; 
+    color: #000000;
+}
+
+
+@media screen and (max-width: 995px) {
+    .example-cards-page {
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .example-text-container {
+        margin-bottom: 50px
+    }
+    
+    .example-card-container:not(:last-child) {
+        margin-bottom: 50px;
+    }
+ 
+
+
+    .example-card-container:not(:last-child) {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+ }
+ @media screen and (max-width: 889px) {
+    .example-card-img {
+        width: fit-content;
+    }
+
+    .example-card-img2 {
+        width: fit-content;
+    }
+ }
+
+ @media screen and (max-width: 485px) {
+    .example-card-container {
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .example-card-img2 {
+        left: 63%;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .example-card-img {
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .example-card-img {
+        left: 20%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .example-text-container {
+    width: 88%;
+    }
+}
+ /* ----------------------------------------------------------------------Card example page end-------------------------------------------------------------------- */
+ /* ----------------------------------------------------------------------Card activity page ---------------------------------------------------------------------- */
+
+ .activity-cards-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+
+    border-bottom: 1px solid #BCB4A5;
+    border-top: 1px solid #BCB4A5;
+
+}
+
+.activity-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-card-img2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 334px;
+    height: 162px;
+}
+
+.activity-text-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 27px;
+    margin-bottom: 22px;
+}
+
+.activity-text-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+
+.activity-card-container {
+    width: 426px;
+    height: 395.48px;
+}
+
+.activity-card-container:not(:last-child) {
+    margin-right: 40px;
+}
+
+.activity-card-btn {
+    width: 216px;
+    height: 57px;    
+    background-color: #60BF91;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 27px;
+    margin-top: 81px;
+
+
+}
+
+.activity-card-btn2 {
+    width: 216px;
+    height: 57px;    
+    background-color: #60BF91;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 27px;
+    margin-top: 81px;
+
+
+}
+
+.activity-card-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;    
+    color: #000000;
+    margin-bottom: 20px;
+    padding-left: 27px;
+    padding-top: 29px;
+}
+
+.activity-card-subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 31px; 
+    padding-left: 27px;
+    padding-bottom: 53px;
+
+
+    color: #000000;
+}
+
+.example-bg {
+    background-image: url(./assets/png/activity-card-bg.png);
+}
+
+.example-bg2 {
+    background-image: url(./assets/png/activity-card-bg2.png);
+}
+
+@media screen and (max-width: 995px) {
+    .activity-cards-page {
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .activity-text-container {
+        margin-bottom: 50px    
+    }
+    
+    .activity-card-container:not(:last-child) {
+        margin-bottom: 50px;
+    }
+ 
+
+
+    .activity-card-container:not(:last-child) {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+ }
+
+ @media screen and (max-width: 485px) {
+    .activity-card-container {
+        width: 99%;
+    }
+    .activity-logo {
+        width: 85%;
+    }
+ }
+
+ @media screen and (max-width: 400px) {
+    .activity-text-container {
+    width: 88%;
+    }
+}
+ /* ----------------------------------------------------------------------Card activity page end------------------------------------------------------------------- */
