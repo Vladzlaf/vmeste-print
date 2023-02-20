@@ -85,15 +85,14 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 134px;
-    padding: 0 16.36%;
-    border-bottom: 1px solid rgba(188, 180, 165, 1)
+    margin: 0 16.36%;
 }
 
 .header-mobile {
     display: none;
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .header-mobile {
         position: fixed;
         z-index: 2;
@@ -109,7 +108,7 @@ body {
     }
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .breadcrumb-container {
         padding-top: 70px;
     }
@@ -119,11 +118,10 @@ body {
 
 .header-top-location{
     display: flex;
-    align-items: center;
-
+    width: 195px;
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .header-top-location{
         display: none;
     } 
@@ -132,11 +130,22 @@ body {
 .header-top-tel{
     display: flex;
     align-items: center;
-    
+    flex-direction: column;
 
 }
 
-@media screen and (max-width: 995px) {
+.header-top-tel-social {padding-left: 40px;
+}
+
+.header-top-tel-social-link {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    text-decoration-line: underline;
+
+}
+
+@media screen and (max-width: 1475px) {
     .header-top-tel{
         display: none;
     } 
@@ -144,11 +153,14 @@ body {
 
 .header-top-mail{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 
 }
 
-@media screen and (max-width: 995px) {
+
+
+@media screen and (max-width: 1475px) {
     .header-top-mail{
         display: none;
     } 
@@ -179,7 +191,7 @@ body {
 
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .header-top-button{
         display: none;
     } 
@@ -189,35 +201,70 @@ body {
 .header-top-text-link {
     
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 13px;
     color: #000000;
     text-decoration: none;
 }
 
-.header-top-icon-location {
-    background-image: url(./assets/svg/location.svg);
-    background-repeat: no-repeat;
-    width: 28px;
-    height: 28px;
-    padding-right: 13px;
+.header-top-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 13px;
+    color: #000000;
+    text-decoration: none;
+    margin: 0;
 }
 
-.header-top-icon-tel {
-    background-image: url(./assets/svg/phone.svg);
-    background-repeat: no-repeat;
+
+
+.header-top-location::before {
+    content: url(./assets/svg/location.svg);
     width: 28px;
     height: 28px;
-    padding-right: 10px;
+    margin-right: 13px;
+
 }
 
-.header-top-icon-mail {
-    background-image: url(./assets/svg/mail.svg);
-    background-repeat: no-repeat;
+.header-top-icontext-container {
+    display: flex;
+}
+
+.header-top-icontext-container::before {
+    content: url(./assets/svg/phone.svg);
     width: 28px;
     height: 28px;
-    padding-right: 10px;
+    margin-right: 10px;
+}
+
+
+.header-top-text-mail-container{
+    flex-direction: row!important;
+    align-items: center;
+}
+
+.header-top-text-mail-container::before {
+    content: url(./assets/svg/mail.svg);
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+
+}
+
+.header-top-time-container::before {
+    content: url(./assets/svg/time.svg);
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+
+}
+
+.header-top-time-container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .header-top-text-container {
@@ -233,17 +280,16 @@ body {
     height: 73px;
     padding: 0 16.16%;
     background: #ffffff;
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
-
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .header-top{
         display: none;
     } 
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .header-bottom{
         display: none;
     } 
@@ -257,7 +303,7 @@ body {
 .header-bottom-logo-part2 {
     margin-bottom: 3px;
 }
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .header-bottom-logo{
         padding-left: 30px;
     }
@@ -290,6 +336,11 @@ body {
     
 }
 
+.navbar {
+    padding: 30px 0;
+    border-top: 1px solid rgba(188, 180, 165, 1);
+}
+
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -317,7 +368,7 @@ body {
 }
 
 .nav-list-item:last-child {
-    padding-left: 50px;
+    padding: 0 50px;
     
 }
 
@@ -436,7 +487,7 @@ img {
     border-bottom: 1px solid rgba(188, 180, 165, 1)
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .content-info-left {
         border: none;
     }
@@ -846,18 +897,34 @@ form {
  div[class^="cat"] > label {
     display: flex;
     align-items: center;
-    width: 95vw;
+    width: 100vw;
     font-weight: 700;
     font-size: 14px;
     line-height: 13px;
     color: #1FC977;
     background: #FFFFFF;
     border: 1px solid #1FC977;
-    padding: 12px 15px;
+    border-left: 0;
+    border-right: 0;
+    padding: 40px 15px;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 13px;
 	transition: all 0.55s;
+}
+
+div[class^="cat"] > label::after {
+    content: url(./assets/svg/tab-down-icon.svg);
+    position: absolute;
+    right: 3%;
+}
+
+div[class^="cat"] > input:checked + label::after {
+    content: url(./assets/svg/tab-top-icon.svg);
+    position: absolute;
+    right: 3%;
+
+
 }
 
 div[class^="cat"] > label {
@@ -1259,18 +1326,21 @@ div[class^="catsecond"] {
 div[class^="catsecond"] > label {
    display: flex;
    align-items: center;
-   width: 95vw;
+   width: 100vw;
    font-weight: 700;
    font-size: 14px;
    line-height: 13px;
    color: #1FC977;
    background: #FFFFFF;
    border: 1px solid #1FC977;
-   padding: 12px 15px;
+   padding: 40px 15px;
    text-transform: uppercase;
    font-weight: 700;
    line-height: 13px;
    transition: all 0.55s;
+   border-left: 0;
+   border-right: 0;
+
 }
 
 div[class^="catsecond"] > label {
@@ -1739,4 +1809,8 @@ input:focus {
     line-height: 11px;
     margin: 15px 0;
     color: #000000;
+}
+
+.footer-time-text {
+    
 }
