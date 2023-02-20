@@ -75,7 +75,7 @@ button:hover {
   top: 65px;
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
   .navbar-mobile .right {
     height: 0;
     overflow: hidden;
@@ -188,15 +188,14 @@ button:hover {
 
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1475px) {
     .header-bottom-logo-mobile {
         display: flex;
     }
 }  
 
-.header-mobile-info {
-    /* display: none; */
-}
+
+
 
 .toggle-info {
     cursor: pointer;
@@ -218,7 +217,7 @@ button:hover {
     align-items: center;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1475px) {
     .header-mobile-info .right {
       height: 0;
       overflow: hidden;
