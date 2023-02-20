@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link href="./bootstrap-vmeste/bootstrap.css" rel="stylesheet">
+    <link href="./bootstrap.css" rel="stylesheet">
     <link href="./flickity/flickity.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./flickity/fullscreen.css">
     <link rel="stylesheet" href="./style.css">
@@ -34,16 +34,27 @@
                 </div>
             </div>
             <div class="header-top-tel">
-                <div class="header-top-icon-tel"></div>
-                <div class="header-top-text-container">
-                    <a target="_blank" href="tel:+375173666888" class="header-top-text-link">+375 (17) 3 666 888</a>
-                    <a target="_blank" href="tel:+375293068068" class="header-top-text-link">+375 (29) 3 068 068</a>    
+                <div class="header-top-icontext-container">
+                    <div class="header-top-icon-tel"></div>
+                    <div class="header-top-text-container">
+                        <a target="_blank" href="tel:+375173666888" class="header-top-text-link">+375 (17) 3 666 888</a>
+                        <a target="_blank" href="tel:+375293068068" class="header-top-text-link">+375 (29) 3 068 068</a>    
+                    </div>
+                </div>
+                <div class="header-top-tel-social">
+                    <a class="header-top-tel-social-link" href="">Telegram</a>
+                    <a class="header-top-tel-social-link" href="">Viber</a>
+                    <a class="header-top-tel-social-link" href="">WhatsApp</a>
+
                 </div>
             </div>
             <div class="header-top-mail">
                 <div class="header-top-icon-mail"></div>
-                <div class="header-top-text-container">
+                <div class="header-top-text-container header-top-text-mail-container">
                     <a target="_blank" href="mailto:ok@vmeste-print.by" class="header-top-text-link">ok@vmeste-print.by</a>
+                </div>
+                <div class="header-top-time-container">
+                    <p class="header-top-text">9:00-18:00</p>
                 </div>
             </div>
             <button class="header-top-button">заказать звонок</button>
@@ -379,7 +390,7 @@
                     <section class="question-section"> 
                         
                         <div class="cat-1">
-                            <input id="tab-1" type="checkbox" name="tabs" tabindex="1"> 
+                            <input id="tab-1" type="radio" name="tabs" tabindex="1" checked> 
                             <label class="tab-type" for="tab-1">Виды кружек</label><!-- end of tab label -->
                 
                             <div class="question-wrap">
@@ -418,7 +429,7 @@
                         </div><!-- end of Catagory -->
                         
                         <div class="cat-2">
-                            <input id="tab-2" type="checkbox" name="tabs" tabindex="7">
+                            <input id="tab-2" type="radio" name="tabs" tabindex="7">
                             <label class="tab-price" for="tab-2" >Прайс лист</label>
                 
                             <div class="question-wrap">
@@ -498,7 +509,7 @@
                             </div>
                         </div>
                         <div class="cat-3">
-                            <input id="tab-3" type="checkbox" name="tabs" tabindex="16">
+                            <input id="tab-3" type="radio" name="tabs" tabindex="16">
                             <label class="tab-calc" for="tab-3" >Расчет стоимости</label>
                 
                             <div class="question-wrap">
@@ -631,10 +642,10 @@
                         </div>
                     </div>
                     <div class="tab-pane fade show tab-second-desk" id="pills-qa" role="tabpanel" aria-labelledby="pills-qa-tab">2222222222222222222222222</div>
-                    <div class="tab-pane fade show tab-second-desk" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">3333333333333333333</div>
-                    <div class="tab-pane fade show tab-second-desk" id="pills-requirements" role="tabpanel" aria-labelledby="pills-requirements-tab">444444444444444444444444444444444444444</div>
-                    <div class="tab-pane fade show tab-second-desk" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">5555555555555555555555555555555555555555555555555</div>
-                    <div class="tab-pane fade show tab-second-desk" id="pills-pluses" role="tabpanel" aria-labelledby="pills-pluses-tab">6666666666666666666666666666666666666666666666</div>
+                    <div class="tab-pane fade show tab-second-desk" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab"></div>
+                    <div class="tab-pane fade show tab-second-desk" id="pills-requirements" role="tabpanel" aria-labelledby="pills-requirements-tab"></div>
+                    <div class="tab-pane fade show tab-second-desk" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab"></div>
+                    <div class="tab-pane fade show tab-second-desk" id="pills-pluses" role="tabpanel" aria-labelledby="pills-pluses-tab"></div>
 
                 </div>
             </div>
@@ -643,7 +654,7 @@
                     <section class="question-section-second"> 
                         
                         <div class="catsecond-1 tab-content-hide">
-                            <input id="tab-second-1" type="checkbox" name="tabs-second" tabindex="1"> 
+                            <input id="tab-second-1" type="radio" name="tabs-second" tabindex="1" checked> 
                             <label class="tab-type tab-label" for="tab-second-1">Идеи</label><!-- end of tab label -->
                 
                             <div class="question-wrap-second">
@@ -672,35 +683,35 @@
                         </div><!-- end of Catagory -->
                         
                         <div class="catsecond-2 tab-content-hide">
-                            <input id="tab-second-2" type="checkbox" name="tabs-second" tabindex="7">
+                            <input id="tab-second-2" type="radio" name="tabs-second" tabindex="7">
                             <label class="tab-price tab-label" for="tab-second-2" >Вопрос Ответ</label>
                 
                             <div class="question-wrap-second">2</div>
                         </div>
 
                         <div class="catsecond-3 tab-content-hide">
-                            <input id="tab-second-3" type="checkbox" name="tabs-second" tabindex="16">
+                            <input id="tab-second-3" type="radio" name="tabs-second" tabindex="16">
                             <label class="tab-price tab-label" for="tab-second-3" >Доставка и оплата</label>
                 
                             <div class="question-wrap-second">3</div>
                         </div>
 
                         <div class="catsecond-4 tab-content-hide">
-                            <input id="tab-second-4" type="checkbox" name="tabs-second" tabindex="16">
+                            <input id="tab-second-4" type="radio" name="tabs-second" tabindex="16">
                             <label class="tab-price tab-label" for="tab-second-4" >Требования к макетам</label>
                 
                             <div class="question-wrap-second"></div>
                         </div>
 
                         <div class="catsecond-5 tab-content-hide">
-                            <input id="tab-second-5" type="checkbox" name="tabs-second" tabindex="16">
+                            <input id="tab-second-5" type="radio" name="tabs-second" tabindex="16">
                             <label class="tab-price tab-label" for="tab-second-5" >Отзывы</label>
                 
                             <div class="question-wrap-second">5</div>
                         </div>
                         
                         <div class="catsecond-6 tab-content-hide">
-                            <input id="tab-second-6" type="checkbox" name="tabs-second" tabindex="16">
+                            <input id="tab-second-6" type="radio" name="tabs-second" tabindex="16">
                             <label class="tab-calc tab-label" for="tab-second-6" >Преимущества</label>
                 
                             <div class="question-wrap-second"><p>6</p></div>
@@ -943,7 +954,7 @@
         <script src="./flickity/js/burger-menu -info.js"></script>
         <script src="./flickity/js/hide-tabs.js"></script>
 
-    <script src="./bootstrap-vmeste/bootstrap.js"></script>
+    <script src="./bootstrap.js"></script>
     <script src="./flickity/js/flickity.pkgd.min.js"></script>
     <script src="./flickity/js/fullscreen.js"></script>
     <script src="./flickity/js/flickity-transformer.pkgd.min.js"></script>
